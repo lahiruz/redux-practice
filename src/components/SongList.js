@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-import {selectSong} from '../actions'
+import { selectSong } from "../actions";
 
 class SongList extends Component {
   render() {
@@ -22,7 +22,7 @@ const stateToProps = (state) => {
 
 // set the dispatch functions
 const dispatchToProps = {
-    selectSong 
-}
+  selectSong,
+};
 
 export default connect(stateToProps, dispatchToProps)(SongList);
